@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GoKids &amp; Family | Clínica Odontopediátrica</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary-container": "#003c12",
+                "on-surface-variant": "#3d4a3c",
+                "surface-dim": "#dbd9d9",
+                "secondary-fixed-dim": "#ffba3f",
+                "on-tertiary-fixed": "#001b3d",
+                "on-secondary-fixed": "#281800",
+                "on-primary": "#ffffff",
+                "on-secondary-fixed-variant": "#604100",
+                "primary-fixed-dim": "#54e16e",
+                "primary-container": "#12b347",
+                "outline": "#6d7b6b",
+                "surface-container": "#efeded",
+                "on-secondary-container": "#6b4800",
+                "error": "#ba1a1a",
+                "surface-variant": "#e4e2e2",
+                "tertiary": "#005db6",
+                "inverse-primary": "#54e16e",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-low": "#f5f3f3",
+                "on-tertiary-container": "#003268",
+                "on-background": "#1b1c1c",
+                "surface-container-highest": "#e4e2e2",
+                "on-error-container": "#93000a",
+                "secondary": "#7f5600",
+                "inverse-on-surface": "#f2f0f0",
+                "tertiary-fixed-dim": "#a9c7ff",
+                "primary": "#006e27",
+                "surface": "#fbf9f8",
+                "error-container": "#ffdad6",
+                "background": "#fbf9f8",
+                "on-surface": "#1b1c1c",
+                "surface-bright": "#fbf9f8",
+                "outline-variant": "#bccbb8",
+                "on-error": "#ffffff",
+                "tertiary-container": "#5e9cfa",
+                "on-tertiary": "#ffffff",
+                "inverse-surface": "#303030",
+                "secondary-fixed": "#ffdeae",
+                "secondary-container": "#feb31b",
+                "surface-container-high": "#eae8e7",
+                "on-primary-fixed-variant": "#00531b",
+                "primary-fixed": "#72fe87",
+                "on-primary-fixed": "#002107",
+                "on-tertiary-fixed-variant": "#00468c",
+                "surface-tint": "#006e27",
+                "tertiary-fixed": "#d6e3ff",
+                "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-mobile": "16px",
+                "base": "8px",
+                "lg": "48px",
+                "gutter": "24px",
+                "sm": "12px",
+                "md": "24px",
+                "xl": "80px",
+                "margin-desktop": "64px",
+                "xs": "4px"
+            },
+            "fontFamily": {
+                "headline-md": ["Plus Jakarta Sans"],
+                "headline-lg": ["Plus Jakarta Sans"],
+                "body-md": ["Work Sans"],
+                "label-md": ["Work Sans"],
+                "headline-lg-mobile": ["Plus Jakarta Sans"],
+                "headline-xl": ["Plus Jakarta Sans"],
+                "body-lg": ["Work Sans"]
+            },
+            "fontSize": {
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .btn-press {
+            box-shadow: 0 2px 0 0 rgba(0, 60, 18, 0.2);
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        .btn-press:active {
+            transform: translateY(2px);
+            box-shadow: 0 0 0 0 rgba(0, 60, 18, 0.2);
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 94, 184, 0.08);
+        }
+        .logo-dots-bg {
+            background-image: radial-gradient(circle, #feb31b 2px, transparent 2.5px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-surface shadow-sm h-20 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop h-full flex justify-between items-center">
+<div class="flex items-center gap-xs">
+<span class="text-headline-md font-extrabold text-primary">GoKids &amp; Family</span>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-primary border-b-2 border-primary pb-1 font-body-md hover:text-primary transition-colors duration-200" href="#">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#servicios">Servicios</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#nosotros">Nosotros</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#contacto">Contacto</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-label-md btn-press hover:bg-primary hover:text-white transition-all active:scale-95">
+                Agendar Cita
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-xl lg:py-32">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div class="relative z-10 space-y-md">
+<img alt="GoKids &amp; Family Logo" class="h-24 md:h-32 mb-base object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYX8nbsmwP6zVpgb5-TEteK0zwT9AVNJ_hndjyHPsH6XSXcdeEG6u6ACIh8X-DStiYFy3yXhtsvEaH2Q3d267J4S56PZlE3iCvAHUYdMKwYipFQsN5naS8_NQrJ3W_Z7-_TIqb9rRFAOXMs65ALK2D0FCiG2gUouOgkjicBC9rEnC6-NStPl5kTgNmrj3V8uWMkH0dYwRSkVQKwTZfO8dmd4N5eCgDdGyko5zpbmofog4Lhtw-aFuk0SocbANWKUbZCSdofB9nmlA"/>
+<h1 class="text-headline-lg-mobile md:text-headline-xl font-headline-xl text-on-background leading-tight">
+                        GoKids &amp; Family: <span class="text-primary">Sonrisas Sanas</span> para un Futuro Brillante
+                    </h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl">
+                        Aquí les brindamos los mejores y actuales tratamientos odontopediátricos. Somos especialistas en manejo de conducta para que tus hijos crezcan amando su sonrisa.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-md pt-base">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-label-md text-lg btn-press hover:brightness-110 active:scale-95 transition-all">
+                            Reserva tu Cita
+                        </button>
+<button class="border-2 border-outline-variant text-primary px-8 py-4 rounded-xl font-label-md text-lg hover:bg-surface-container transition-all">
+                            Conoce más
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl group-hover:bg-primary/20 transition-colors"></div>
+<div class="relative rounded-3xl overflow-hidden soft-shadow aspect-[4/3]">
+<img class="w-full h-full object-cover" data-alt="A professional and bright dental office scene featuring a kind, smiling female pediatric dentist wearing a light green coat and a colorful mask, interacting gently with a happy 6-year-old child sitting in a modern blue dental chair. The environment is high-trust and cheerful, with soft natural light streaming through windows, clinical white surfaces, and playful children's wall art in the background. The overall aesthetic is modern, clean, and empathetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-51P7Skt0WNx7LrER0srPcNWU2xqWIjU6YeZuQQ3MBrTYOT-6Hz7LsZFWyC6yxg8d63R4V7nB28p_f0JHA4h3km9MqBYZmKlXgiiqOzHv6ZIwsmO5-GDfZlVRybqSyNk2wRXs8Dpx5KstvXVow5atd_4jTmbGtl7bCLq2bSYft_qgKGV_Xee-ATsKz4Ed4ah0OGT1vj7s8v9_HjJOPu2BdPHVpF4G72iSRYJjifiN_hXj-GcOhfn9lZzVSdQEPWNd3CtA8l1Mi8Y"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="py-xl bg-white">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Value 1 -->
+<div class="flex flex-col items-center text-center p-md space-y-base group">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-base text-on-secondary-container transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Tratamientos Modernos</h3>
+<p class="text-body-md text-on-surface-variant">Tecnología de vanguardia para diagnósticos precisos y tratamientos mínimamente invasivos.</p>
+</div>
+<!-- Value 2 -->
+<div class="flex flex-col items-center text-center p-md space-y-base group">
+<div class="w-16 h-16 rounded-full bg-tertiary-container flex items-center justify-center mb-base text-on-tertiary-container transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl">child_care</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Especialistas en Niños</h3>
+<p class="text-body-md text-on-surface-variant">Un equipo dedicado exclusivamente a la salud bucal infantil desde los primeros meses.</p>
+</div>
+<!-- Value 3 -->
+<div class="flex flex-col items-center text-center p-md space-y-base group">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-base text-on-primary-container transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface">Manejo de Conducta</h3>
+<p class="text-body-md text-on-surface-variant">Técnicas psicológicas para que la visita al dentista sea una experiencia positiva y divertida.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Services Section -->
+<section class="py-xl bg-surface" id="servicios">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+<div class="max-w-2xl">
+<h2 class="text-headline-lg md:text-headline-xl font-headline-xl text-primary mb-base">Nuestros Servicios</h2>
+<p class="text-body-lg text-on-surface-variant">Brindamos soluciones integrales adaptadas a cada etapa del crecimiento de tus pequeños.</p>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-4 py-2 rounded-full font-label-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-sm">spark</span> Cuidado de Confianza
+                    </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Service Card 1 -->
+<div class="bg-white p-md rounded-xl border-t-8 border-primary soft-shadow flex flex-col h-full hover:-translate-y-2 transition-all duration-300">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-primary">health_and_safety</span>
+</div>
+<h4 class="text-headline-md font-headline-md mb-base">Odontopediatría Integral</h4>
+<p class="text-body-md text-on-surface-variant mb-md flex-grow">Prevención y restauración completa para mantener dientes sanos y fuertes.</p>
+<div class="flex items-center text-primary font-label-md gap-xs cursor-pointer hover:underline">
+                            Ver detalle <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-white p-md rounded-xl border-t-8 border-secondary-container soft-shadow flex flex-col h-full hover:-translate-y-2 transition-all duration-300">
+<div class="w-12 h-12 bg-secondary-container/10 rounded-lg flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-secondary-container">straighten</span>
+</div>
+<h4 class="text-headline-md font-headline-md mb-base">Ortodoncia Preventiva</h4>
+<p class="text-body-md text-on-surface-variant mb-md flex-grow">Guiamos el crecimiento correcto de los maxilares y la posición dental desde temprana edad.</p>
+<div class="flex items-center text-secondary-container font-label-md gap-xs cursor-pointer hover:underline">
+                            Ver detalle <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-white p-md rounded-xl border-t-8 border-tertiary-container soft-shadow flex flex-col h-full hover:-translate-y-2 transition-all duration-300">
+<div class="w-12 h-12 bg-tertiary-container/10 rounded-lg flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-tertiary-container">baby_changing_station</span>
+</div>
+<h4 class="text-headline-md font-headline-md mb-base">Odontología para Bebés</h4>
+<p class="text-body-md text-on-surface-variant mb-md flex-grow">Cuidado preventivo especializado desde la aparición del primer diente de leche.</p>
+<div class="flex items-center text-tertiary-container font-label-md gap-xs cursor-pointer hover:underline">
+                            Ver detalle <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-white p-md rounded-xl border-t-8 border-primary-fixed-dim soft-shadow flex flex-col h-full hover:-translate-y-2 transition-all duration-300">
+<div class="w-12 h-12 bg-primary-fixed-dim/10 rounded-lg flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-primary-fixed-dim">bedtime</span>
+</div>
+<h4 class="text-headline-md font-headline-md mb-base">Sedación Consciente</h4>
+<p class="text-body-md text-on-surface-variant mb-md flex-grow">Para que los procedimientos complejos sean tranquilos y sin traumas para el niño.</p>
+<div class="flex items-center text-primary-fixed-dim font-label-md gap-xs cursor-pointer hover:underline">
+                            Ver detalle <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialists Section -->
+<section class="py-xl bg-white overflow-hidden" id="nosotros">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-on-primary-container rounded-3xl p-md md:p-xl relative overflow-hidden">
+<!-- Background decor -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-secondary/10 rounded-full -ml-24 -mb-24 blur-2xl"></div>
+<div class="relative z-10 flex flex-col lg:flex-row gap-xl items-center">
+<div class="w-full lg:w-1/2">
+<div class="bg-primary/20 text-primary-fixed px-4 py-2 rounded-full font-label-md w-fit mb-base">Expertos Certificados</div>
+<h2 class="text-headline-lg md:text-headline-xl font-headline-xl text-white mb-md">Maestros del Manejo de Conducta</h2>
+<p class="text-body-lg text-primary-fixed opacity-90 mb-xl">
+                                Nuestro equipo no solo sabe de dientes, son expertos en entender el mundo infantil. Utilizamos técnicas de psicología positiva, juegos y explicaciones adaptadas para asegurar que cada visita sea libre de miedo. En GoKids &amp; Family, el bienestar emocional es tan importante como la salud clínica.
+                            </p>
+<div class="flex gap-md">
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-2 border-on-primary-container bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a friendly female pediatric dentist smiling warmly. She has a professional and approachable look, set in a clean clinic background with soft blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJq2-OAsqTKlIJoYk7gYitMdvOEM2xJpnLfSS9Grc8NR9M4_iJ-Yoaoxs9pcmw13Q9IfCJp6_lS2OO7FzFr-nkYo8orBN02F0HvLhqv6sPMT9MIl7RqgumGpAvKI2EJE722EBLu-MrlJPSKNNoT4uEw_hhWgZtMlA7rX79lx2hiyCU7a47pdMUVercy5CD29PeCW0Vz7ZDyYUnwNe652CmukEfdQINU4IIc2GXwfvjaHRYc28KcoDjMe2gQ9YiXn5p_BpDuOE6rCE"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-on-primary-container bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a smiling male dentist for kids, looking professional and friendly. Warm lighting and clean modern clinical setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8g3O22umqaJKQMQbOqLSf2zYUbJwIhafXjv63a50VlWvGSa_H5CZ6QMeD5WhrbEdlsXK5xoU3mr49TlawQdO4oyDGmSKMImqXC2HAsbNsmpfJ2pG2PNKFlhWof0UBg5D5voGJjahnXyXyb_FlruPH5BxhF56Lp9mHlLL1imjxwp8kz1vT7LvVctRcM9XGkLkIpy53KEwE2XIhjtzFB4_umfAAXnwE5HoZmJUkSbPWm811zNUM2AUkv6nX31QrXImI3tcgTNQ0FWU"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-on-primary-container bg-surface-container flex items-center justify-center font-label-md text-on-surface">+5</div>
+</div>
+<span class="text-white font-label-md pt-3">Tu equipo de confianza</span>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<img class="rounded-2xl soft-shadow border-4 border-primary/20 w-full h-auto" data-alt="A joyful and empathetic dental setting where a dentist is showing a child a oversized colorful toothbrush and a toy dinosaur. The room is filled with bright, joyful energy, featuring pastel blue walls and modern dental equipment. The lighting is soft and inviting, emphasizing the playful and fear-free approach to pediatric dentistry. Modern and professional aesthetic with vibrant accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdiHGF2dzDMo7X6R5Z4cKeEMTldNaGEbMlWDDQyML7CGSs9GKs4KfcevEVkHpK4_HzsVqq7m3JGFfXBvYvftaDy_AphduqIrUYlDTE5CbwE88nkHA9RoQ4t-AYzBbiKc8nO7cZ7D9KasAj6QQpqhEtY9KUqQJnEDiHnR7dpL8kUY6IljNmOeuolsZK9B8ylkC6Gv4q972SZ4pwmvl8YPCQf-ypZ-RNyBZo2PtkYTIunkVaxkPy2iP5OL3T-8Zs58iBWkJV7gXkWmc"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-margin-mobile text-center">
+<span class="material-symbols-outlined text-primary text-6xl mb-md">format_quote</span>
+<blockquote class="text-headline-md md:text-headline-lg font-headline-md text-on-surface mb-xl italic leading-relaxed">
+                    "La mejor experiencia para mis hijos, ¡ahora les encanta ir al dentista! El trato es tan dulce y profesional que mis pequeños no sintieron ni un poquito de miedo."
+                </blockquote>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed overflow-hidden mb-base">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling young mother with a friendly expression. Soft natural lighting, warm aesthetic, professional digital photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuZWoRJKZyvfBGg430KQb3pbSG8C2OngKCUeVO9YaNDB2AkH-VPb4St539JiSg73Tj_DczD88DvqnGO0usqg9wEWS8I9F29ioWP68VyIz9cMTcBBKx42MAyIqE7n5SRI6P02OdlH8ugs-4yAHV4pr29xQhAGWoFJxrsXZSgAQeXzuH80wE_Rr3iM3N0jsfdjeeKJI9tv6-jy-dM-cTysFWCkDJG4RUqkrDUe2LSN2SbtbhR_7usjx_GjHh65P9R3NwwLj304BcAzg"/>
+</div>
+<p class="font-headline-md text-on-surface">María Fernanda S.</p>
+<p class="text-label-md text-on-surface-variant">Mamá de Mateo (5 años) y Sofía (3 años)</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container py-xl" id="contacto">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="space-y-md">
+<div class="text-headline-md font-bold text-primary">GoKids &amp; Family</div>
+<p class="text-body-md text-on-surface-variant max-w-xs">
+                    Clínica Odontopediátrica Familiar. Expertos en sonrisas felices y pacientes sin miedo.
+                </p>
+<div class="flex gap-md">
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">face_nod</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+</div>
+</div>
+<div class="space-y-md">
+<h4 class="text-label-md font-bold text-on-surface uppercase tracking-wider">Enlaces Rápidos</h4>
+<ul class="space-y-sm">
+<li><a class="text-on-surface-variant hover:text-primary underline transition-all" href="#">Horarios de Atención</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline transition-all" href="#">Ubicación</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline transition-all" href="#">Blog de Salud Dental</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline transition-all" href="#">Preguntas Frecuentes</a></li>
+</ul>
+</div>
+<div class="space-y-md">
+<h4 class="text-label-md font-bold text-on-surface uppercase tracking-wider">Contáctanos</h4>
+<ul class="space-y-sm">
+<li class="flex items-start gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Av. Principal de la Ciudad, Edif. Salud, Piso 2, Oficina 24.</span>
+</li>
+<li class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>+58 (212) 123-4567</span>
+</li>
+<li class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">chat</span>
+<span>WhatsApp: +58 (412) 987-6543</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mt-xl pt-lg border-t border-outline-variant/30 text-center text-label-md text-on-surface-variant">
+            © 2024 GoKids &amp; Family. Clínica Odontopediátrica Familiar. Todos los derechos reservados.
+        </div>
+</footer>
+<script>
+        // Simple scroll interaction for header
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('h-16', 'shadow-md');
+                nav.classList.remove('h-20', 'shadow-sm');
+            } else {
+                nav.classList.add('h-20', 'shadow-sm');
+                nav.classList.remove('h-16', 'shadow-md');
+            }
+        });
+    </script>
+</body></html>
