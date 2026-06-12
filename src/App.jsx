@@ -89,7 +89,7 @@ const quickLinks = [
 ];
 
 const whatsappNumber = "932245094";
-const whatsappHref = `https://wa.me/519${whatsappNumber}?text=Hola%2C%20quiero%20agendar%20una%20cita`;
+const whatsappHref = `https://wa.me/51${whatsappNumber}?text=Hola%2C%20quiero%20agendar%20una%20cita`;
 
 function App() {
   const [isCompactHeader, setIsCompactHeader] = useState(false);
