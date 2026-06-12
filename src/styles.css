@@ -902,11 +902,11 @@ a {
   }
 
   .brand {
-    max-width: 168px;
+    max-width: 190px;
   }
 
   .brand__logo {
-    height: 40px;
+    height: 46px;
   }
 
   .topbar__inner {
@@ -914,9 +914,9 @@ a {
   }
 
   .button--pill {
-    min-height: 38px;
-    padding: 0 12px;
-    font-size: 0.82rem;
+    min-height: 32px;
+    padding: 0 9px;
+    font-size: 0.73rem;
   }
 
   .button {
